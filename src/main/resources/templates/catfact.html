@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link th:href="@{styles/fact.css}" rel="stylesheet"/>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div class="wrapper1">
+<p th:text="${fact}">
+<p/>
+</div>
+<div class="wrapper">
+    <a  th:onclick="|window.location.href='/catfact'|"><span>New Fact</span> </a>
+</div>
+</body>
+</html>
